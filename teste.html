@@ -1,0 +1,23 @@
+<meta charset="UTF-8">
+<script>
+    calculaSomatorio()
+    function calculaSomatorio(){
+        var valor = parseInt(prompt("Digite o valor a seguir"))
+        var somatorio = 0;
+        var contador = 0;
+        document.write("<h1>Resultado =")
+    for(var i = 1; i<valor;i++){
+        if(i%3 == 0 || i%5 == 0){
+            if(contador ==0 ){
+                document.write(" " + i)
+                contador++
+                somatorio+=i
+            }else{
+                document.write(" + " + i)
+                somatorio += i;
+            }
+        }
+    }
+    return document.write(" = " + somatorio)
+}
+</script>
